@@ -16,9 +16,9 @@ app.post("/", function(req, res) {
         body.name === VALID_NAME &&
         body.raw_password === VALID_RAW_PASSWORD;
     if(isValid) {
-        res.send("AC");
+        res.send("AC\n");
     } else {
-        res.send("WA");
+        res.send("WA\n");
     }     
 });
 
